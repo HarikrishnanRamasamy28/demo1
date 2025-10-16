@@ -58,9 +58,9 @@ html, body {
   /* top: 15%;
   left: 0; */
   top: 50%;
-  left: 50%;
-  /* transform: translateY(-50%); */
-  transform: translate(-50%, -50%);
+  left:0;
+  transform: translateY(-50%);
+  /* transform: translate(-50%, -50%); */
   /* overflow: visible; */
   overflow: hidden;
   pointer-events: none;
@@ -85,17 +85,18 @@ html, body {
 
 /* ========== Navigation / Links ========== */
 .hamburger {
+  /* margin-top: -10px; */
   display: none;
-  font-size: 38px;
+  font-size: 44px;
   background: none;
   border: none;
-  color: red;
+  color:white;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.hamburger:hover {
+/* .hamburger:hover {
   transform: rotate(90deg);
-}
+} */
 .navBar {
   display: block;
 }
@@ -211,7 +212,9 @@ html, body {
   .hamburger {
     display: block;
     align-self: flex-end;
-    margin: 0;
+    /* margin: 0; */
+    margin-left: 120px;
+    margin-bottom: 10px;
   }
 
   .navBar {
