@@ -52,36 +52,7 @@ html, body {
   color:rgb(217, 144, 9);
 }
 
-/* ========== Bus Animation ========== */
-.bus-container {
-  position: absolute;
-  /* top: 15%;
-  left: 0; */
-  top: 50%;
-  left:0;
-  transform: translateY(-50%);
-  /* transform: translate(-50%, -50%); */
-  /* overflow: visible; */
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 200;
-  /* margin-left: 430px; */
-}
-.moving-bus {
-  position: absolute;
-  height: 70px;
-  animation: drive 3s linear infinite;
-  z-index: 250;
-}
-@keyframes drive {
-  0% {
-    left: -160px;
-  }
-  100% {
-    /* left: calc(10% + 5px); */
-    left: 100%;
-  }
-}
+
 
 /* ========== Navigation / Links ========== */
 .hamburger {
@@ -213,7 +184,7 @@ html, body {
     display: block;
     align-self: flex-end;
     /* margin: 0; */
-    margin-left: 120px;
+    margin-left:80px;
     margin-bottom: 10px;
   }
 
@@ -272,37 +243,10 @@ html, body {
     color:#555 !important;
   }
 
-    /* .bus-container {
-    display: none;
-  }
-   */
+
 
   /* Bus container adjustments (optional or hide) */
-  .bus-container {
-    position: absolute;
-    top: auto;
-    bottom: 16%;
-    left: 5%;
-    transform: none;
-    margin-left: 305px;
-  }
-    .moving-bus {
-    position: relative;
-    height: 50px; 
-    animation: drive-mobile 4s linear infinite;
-    left: 0;
-    top: 0;
-    z-index: 250;
-  }
-
-  @keyframes drive-mobile {
-    0% {
-      left: -80px;
-    }
-    100% {
-      left: calc(3% + 10px);
-    }
-  }
+  
 }
 
 
