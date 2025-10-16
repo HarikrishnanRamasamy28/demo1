@@ -307,35 +307,36 @@ html, body {
   background-color:salmon;
 }
 
-/* ===== Responsive ===== */
-/* @media (max-width: 450px) {
+
+/* ===== Cargo Hero Section - Mobile 450px ===== */
+@media (max-width: 450px) {
   .hero-cargo {
-    height: 420px;
-    background-attachment: scroll; 
-    padding: 40px 10px;
+    height: 400px; /* reduce height for small screens */
+    background-attachment: scroll; /* fixed background may cause issues on mobile */
   }
 
   .hero-cargo .hero-content {
-    max-width: 100%;
+    max-width: 90%; /* fit inside mobile screen */
     padding: 0 10px;
   }
 
   .hero-cargo h1 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 1.8rem; /* smaller heading */
+    margin-bottom: 20px;
   }
 
   .hero-cargo p {
-    font-size: 1rem;
+    font-size: 1rem; /* smaller paragraph */
     margin-bottom: 20px;
   }
 
   .hero-cargo .hero-cta-btn {
-    padding: 10px 25px;
+    padding: 12px 25px; /* smaller button */
     font-size: 1rem;
-    border-top-right-radius: 30px;
+    border-top-right-radius: 30px; /* slightly smaller radius */
   }
-} */
+}
+
 
 
 
@@ -457,7 +458,7 @@ html, body {
 
 /* ===== Responsive ===== */
 /* ===== Media Query for screens <= 450px ===== */
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .loyalty {
     padding: 30px 10px;
   }
@@ -502,7 +503,9 @@ html, body {
     font-size: 1rem;
     margin-left: -520px;
   }
-} */
+}
+
+
 
 
 
@@ -640,7 +643,7 @@ html, body {
 }
 
 /* ===== Responsive ===== */
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .corporate {
     padding: 40px 15px;
   }
@@ -706,7 +709,7 @@ html, body {
     font-size: 1rem;
     border-top-right-radius: 25px;
   }
-} */
+}
 
 
 
@@ -796,7 +799,7 @@ html, body {
 }
 
 
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .testimonials-section {
     padding: 40px 15px;
   }
@@ -840,7 +843,7 @@ html, body {
   .next {
     right: -25px;
   }
-} */
+}
 
 
 
@@ -950,7 +953,7 @@ html, body {
 }
 
 /* ===== Responsive ===== */
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .travel-guides {
     padding: 40px 15px;
   }
@@ -1004,7 +1007,7 @@ html, body {
     font-size: 0.95rem;
     margin-bottom: 15px;
   }
-} */
+}
 
 
 
@@ -1110,7 +1113,7 @@ html, body {
 }
 
 
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .ticketing-alt {
     flex-direction: column;
     gap: 30px;
@@ -1168,7 +1171,7 @@ html, body {
     font-size: 0.95rem;
     margin-left: -530px;
   }
-} */
+}
 
 
 
@@ -1316,7 +1319,7 @@ html, body {
 }
 
 /* ===== Responsive ===== */
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .app-promo {
     padding: 40px 15px;
   }
@@ -1378,7 +1381,7 @@ html, body {
     max-width: 90%;
     border-radius: 15px;
   }
-} */
+}
 
 
 
@@ -1452,7 +1455,7 @@ html, body {
 }
 
 
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .safety-policies.simple-list .container {
     padding: 1rem;
   }
@@ -1499,7 +1502,7 @@ html, body {
   .policy-text p {
     font-size: 0.9rem;
   }
-} */
+}
 
 
 
@@ -1581,7 +1584,9 @@ html, body {
   font-size: 1rem;
   color: #444;
   line-height: 1.5;
+  width: 300px !important;
   margin-bottom: 1.5rem;
+  margin-left: 10px !important;
 }
 
 .offer-tag {
@@ -1636,7 +1641,7 @@ html, body {
 }
 
 /* Responsive tweaks */
-/* @media (max-width: 450px) {
+@media (max-width: 450px) {
   .special-offers h2 {
     font-size: 2rem;
     margin-left: 10px;
@@ -1664,7 +1669,7 @@ html, body {
     padding: 0.6rem 1rem;
     font-size: 0.95rem;
   }
-} */
+}
 
 
 
