@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./logo.png" />
+  <title>Transportation</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="topbar">
+      <header class="header">
+        <div class="logo">
+          <img src="./logo.png" alt="stackly" />
+          <h2>STACKLY</h2>
+        </div>
+        <div class="bus-container">
+          <img src="./bus.png" alt="" class="moving-bus" height="70px">
+        </div>
+        <button class="hamburger" id="hamburger">☰</button>
+      </header>
+
+      <nav class="navBar">
+        <div class="navLinks">
+          <ul class="linkRight">
+            <li class="dropdown">
+              <a href="./index.html">Home ▼</a>
+              <ul class="dropdown-menu">
+                <li><a href="./home2.html">Home page 2</a></li>
+              </ul>
+            </li>
+            <li><a href="./busTicket.html">Bus Tickets</a></li>
+            <li><a href="./trainTicket.html">Train Tickets</a></li>
+            <li><a href="./offer.html">Offers</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./error.html">Contact Us</a></li>
+            <li><a href="./error.html">Terms & Conditions</a></li>
+            <li><button onclick="window.location.href='./sign.html'">Log / Sign In</button></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- rest of your page content -->
+  </div>
+
+
+
+
+
+
+
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Your Trusted Partner in Reliable Transportation</h1>
+    <p>Transportation is the center of the world! It is the glue of our 
+       daily lives. When it goes well, we don't see it. When it goes wrong, 
+       it negatively colors our day, makes us feel angry and impotent, 
+       curtails our possibilities.
+    </p>
+    <a href="./error.html" class="cta-button">Explore Our Services</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="search-section">
+  <div class="search-container">
+    <h2>Plan Your Journey</h2>
+    <form class="search-form">
+      
+      <!-- Trip Type -->
+      <div class="trip-type">
+        <label><input type="radio" name="trip" value="oneway" checked> One Way</label>
+        <label><input type="radio" name="trip" value="round"> Round Trip</label>
+      </div>
+
+      <!-- From / To -->
+      <div class="form-group">
+        <label for="from">From</label>
+        <input type="text" id="from" placeholder="Enter departure city" required>
+      </div>
+      <div class="form-group">
+        <label for="to">To</label>
+        <input type="text" id="to" placeholder="Enter destination city" required>
+      </div>
+
+      <!-- Dates -->
+      <div class="form-group">
+        <label for="date">Departure Date</label>
+        <input type="date" id="date" required>
+      </div>
+      <div class="form-group return-date">
+        <label for="returndate">Return Date</label>
+        <input type="date" id="returndate">
+      </div>
+
+      <!-- Passengers -->
+      <div class="form-group">
+        <label for="passengers">Passengers</label>
+        <select id="passengers">
+          <option>1 Passenger</option>
+          <option>2 Passengers</option>
+          <option>3 Passengers</option>
+          <option>4 Passengers</option>
+          <option>5+ Passengers</option>
+        </select>
+      </div>
+
+      <!-- Class -->
+      <div class="form-group">
+        <label for="class">Class</label>
+        <select id="class">
+          <option>Economy</option>
+          <option>AC</option>
+          <option>Sleeper</option>
+          <option>Luxury</option>
+          <option>First Class</option>
+        </select>
+      </div>
+
+      <!-- Time Preference -->
+      <div class="form-group">
+        <label for="time">Preferred Time</label>
+        <select id="time">
+          <option>Anytime</option>
+          <option>Morning (6am - 12pm)</option>
+          <option>Afternoon (12pm - 6pm)</option>
+          <option>Evening (6pm - 10pm)</option>
+          <option>Night (10pm - 6am)</option>
+        </select>
+      </div>
+
+      <!-- Transport Type -->
+      <div class="form-group">
+        <label for="mode">Transport Type</label>
+        <select id="mode">
+          <option>Bus</option>
+          <option>Train</option>
+          <option>Sleeper Coach</option>
+          <option>Express</option>
+          <option>Luxury Coach</option>
+        </select>
+      </div>
+
+      <!-- Seat Preference -->
+      <div class="form-group">
+        <label for="seat">Seat Preference</label>
+        <select id="seat">
+          <option>No Preference</option>
+          <option>Window</option>
+          <option>Aisle</option>
+          <option>Upper Berth</option>
+          <option>Lower Berth</option>
+        </select>
+      </div>
+
+      <!-- Ticket Type -->
+      <div class="form-group">
+        <label for="ticket">Ticket Type</label>
+        <select id="ticket">
+          <option>Normal</option>
+          <option>Student</option>
+          <option>Senior Citizen</option>
+          <option>Family</option>
+        </select>
+      </div>
+
+      <!-- Promo Code -->
+      <div class="form-group">
+        <label for="promo">Promo Code</label>
+        <input type="text" id="promo" placeholder="Enter code (optional)">
+      </div>
+
+      <!-- Button -->
+      <button type="submit" class="search-btn" 
+        onclick="window.location.href='./error.html'">🔍 Search
+      </button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="pricing-section">
+  <div class="container">
+
+    <h2>Our Fixed Routes & Fares</h2>
+     <!-- Chennai Routes -->
+    <h3>🚍 Chennai Routes</h3>
+    <table class="fare-table">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Vehicle Type</th>
+          <th>Estimated Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chennai → Bengaluru</td>
+          <td>Sedan</td>
+          <td>₹ 1,500</td>
+        </tr>
+        <tr>
+          <td>Chennai → Madurai</td>
+          <td>Van</td>
+          <td>₹ 2,000</td>
+        </tr>
+        <tr>
+          <td>Chennai → Coimbatore</td>
+          <td>SUV</td>
+          <td>₹ 2,200</td>
+        </tr>
+        <tr>
+          <td>Chennai → Hyderabad</td>
+          <td>Luxury Coach</td>
+          <td>₹ 3,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Bengaluru Routes -->
+    <h3>🚍 Bengaluru Routes</h3>
+    <table class="fare-table">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Vehicle Type</th>
+          <th>Estimated Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bengaluru → Mysore</td>
+          <td>SUV</td>
+          <td>₹ 900</td>
+        </tr>
+        <tr>
+          <td>Bengaluru → Chennai</td>
+          <td>Sleeper Coach</td>
+          <td>₹ 1,700</td>
+        </tr>
+        <tr>
+          <td>Bengaluru → Hyderabad</td>
+          <td>Luxury Bus</td>
+          <td>₹ 2,500</td>
+        </tr>
+        <tr>
+          <td>Bengaluru → Pune</td>
+          <td>Truck</td>
+          <td>₹ 3,800</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Mumbai Routes -->
+    <h3>🚍 Mumbai Routes</h3>
+    <table class="fare-table">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Vehicle Type</th>
+          <th>Estimated Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mumbai → Pune</td>
+          <td>Sedan</td>
+          <td>₹ 1,200</td>
+        </tr>
+        <tr>
+          <td>Mumbai → Goa</td>
+          <td>Luxury Coach</td>
+          <td>₹ 3,500</td>
+        </tr>
+        <tr>
+          <td>Mumbai → Ahmedabad</td>
+          <td>SUV</td>
+          <td>₹ 2,800</td>
+        </tr>
+        <tr>
+          <td>Mumbai → Delhi</td>
+          <td>Truck</td>
+          <td>₹ 6,500</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Delhi Routes -->
+    <h3>🚍 Delhi Routes</h3>
+    <table class="fare-table">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Vehicle Type</th>
+          <th>Estimated Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Delhi → Agra</td>
+          <td>Sedan</td>
+          <td>₹ 1,400</td>
+        </tr>
+        <tr>
+          <td>Delhi → Jaipur</td>
+          <td>Van</td>
+          <td>₹ 2,000</td>
+        </tr>
+        <tr>
+          <td>Delhi → Chandigarh</td>
+          <td>SUV</td>
+          <td>₹ 2,500</td>
+        </tr>
+        <tr>
+          <td>Delhi → Lucknow</td>
+          <td>Luxury Coach</td>
+          <td>₹ 3,800</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="offers">
+  <div class="offer-container">
+
+    <div class="offer-card">
+      <div class="badge">20% OFF</div>
+      <img src="offer.png" alt="Offer 1" class="offer-img">
+      <div class="offer-content">
+        <h3>Express City Route</h3>
+        <p>Fast transit between City A & City B. Book now and save!</p>
+        <a href="./error.html" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <div class="badge">15% OFF</div>
+      <img src="offer.png" alt="Offer 2" class="offer-img">
+      <div class="offer-content">
+        <h3>Weekend Special Freight</h3>
+        <p>Lower rates for freight booked during weekends.</p>
+        <a href="./error.html" class="btn">Get Quote</a>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <div class="badge">10% OFF</div>
+      <img src="offer.png" alt="Offer 3" class="offer-img">
+      <div class="offer-content">
+        <h3>Long-Distance Saver</h3>
+        <p>Travel over 500 km? Get added discounts on your fare.</p>
+        <a href="./error.html" class="btn">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="tracking-section">
+  <div class="navigate">
+    <img src="./navigate.png" alt="" height="400px">
+  </div>
+  <div class="tracking-container modern-tracking">
+    <h2>Track Your Shipment / Trip</h2>
+    
+    <form id="trackingForm" class="tracking-form">
+      <div class="input-group">
+        <input
+          type="text"
+          id="trackingInput"
+          placeholder="Enter tracking number / trip code"
+          required
+        />
+        <button type="submit" 
+          onclick="window.location.href='./error.html'">Track Now
+        </button>
+      </div>
+    </form>
+    
+    <div class="map-container">
+      <div id="map" class="map"></div>
+      <div class="status-overlay" id="statusInfo">
+        <h3>Shipment Status</h3>
+        <p>Status: <span id="statusText">—</span></p>
+        <p>Last Updated: <span id="lastUpdated">—</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="testimonials-section">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+    
+    <div class="testimonials-slider">
+      <div class="testimonial-card active">
+        <div class="testimonial-text">“Excellent service! The transport was on time, communication was clear, and the driver was very professional.”</div>
+        <div class="testimonial-footer">
+          <img src="./man 1.jpg" alt="Customer 1" class="testimonial-avatar">
+          <div class="testimonial-info">
+            <h3 class="testimonial-name">Alice Williams</h3>
+            <p class="testimonial-role">Co-Founder, StartupX</p>
+            <div class="testimonial-stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">“I’ve used their logistics service multiple times — always reliable, safe, and cost-efficient. Highly recommend!”</div>
+        <div class="testimonial-footer">
+          <img src="./man 2.jpg" alt="Customer 2" class="testimonial-avatar">
+          <div class="testimonial-info">
+            <h3 class="testimonial-name">Rajesh Kumar</h3>
+            <p class="testimonial-role">Logistics Manager, FreightCo</p>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">“Great rates and customer support. The tracking feature is especially useful — I always know where the shipment is.”</div>
+        <div class="testimonial-footer">
+          <img src="./women.jpg" alt="Customer 3" class="testimonial-avatar">
+          <div class="testimonial-info">
+            <h3 class="testimonial-name">Meera Singh</h3>
+            <p class="testimonial-role">Small Business Owner</p>
+            <div class="testimonial-stars">★★★★☆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="safety-section" aria-labelledby="safety-heading">
+  <div class="safety-container">
+
+    <header class="safety-header">
+      <h2 id="safety-heading">Safety · Quality · Compliance</h2>
+      <p class="lead">Licensed, insured and audited — we follow industry best practices so your shipments and passengers stay safe.</p>
+    </header>
+
+    
+
+    <!-- Quick checklist cards -->
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Driver Screening</h3>
+        <p>Criminal & driving-record checks, ID verification, ongoing/periodic screenings and random drug & alcohol tests.</p>
+        <ul class="mini-list">
+          <li>Criminal database & local checks</li>
+          <li>License & endorsements verified</li>
+          <li>Continuous monitoring / rechecks</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Vehicle Maintenance</h3>
+        <p>Preventive maintenance schedule, daily pre-trip checks and centralised service history for every vehicle.</p>
+        <ul class="mini-list">
+          <li>Manufacturer intervals + mileage checks</li>
+          <li>Inspection logs & parts traceability</li>
+          <li>Emergency repair protocol</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Insurance & Permits</h3>
+        <p>Commercial insurance coverage, valid registration, route permits and Pollution Under Control (PUC) certificates available.</p>
+        <ul class="mini-list">
+          <li>Third-party & commercial policy</li>
+          <li>Vehicle RC, Fitness & permits</li>
+          <li>Claims & incident handling</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Training & Audits</h3>
+        <p>Driver safety training, defensive driving, incident reporting and third-party safety audits to keep standards high.</p>
+        <ul class="mini-list">
+          <li>Induction & refresher training</li>
+          <li>Monthly safety drills</li>
+          <li>Independent audits</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Expandable details / documents -->
+    <div class="details-row">
+      <div class="details-left">
+        <h4>View compliance documents</h4>
+        <p>We publish audit summaries, certificate snapshots and insurance summaries on request. Request access or download certificates below.</p>
+        <div class="actions">
+          <button id="requestDocsBtn" class="btn btn-primary" type="button"
+            onclick="window.location.href='./error.html'">Request Documents
+          </button>
+          <a href="./error.html" class="btn btn-outline" id="viewPolicy">View Safety Policy</a>
+        </div>
+      </div>
+
+      <div class="details-right">
+        <div class="toggle" id="accordion">
+          <button class="acc-btn" data-target="acc1">Driver Vetting Policy</button>
+          <div class="acc-panel" id="acc1">
+            <p>Background checks include national criminal checks, licence validation, prior employer verification and periodic testing.</p>
+          </div>
+
+          <button class="acc-btn" data-target="acc2">Maintenance & Inspection</button>
+          <div class="acc-panel" id="acc2">
+            <p>All vehicles follow a preventive maintenance schedule; records kept for each service, tyre checks and safety inspections pre-trip.</p>
+          </div>
+
+          <button class="acc-btn" data-target="acc3">Incident & Claims Procedure</button>
+          <div class="acc-panel" id="acc3">
+            <p>Immediate incident reporting, insurer notification, root-cause investigation and corrective action tracking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="contact-section" aria-labelledby="contact-heading">
+  <div class="contact-container">
+    <header class="contact-header">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <p>We’re here to help — reach us by phone, email, or message us using the form below.</p>
+    </header>
+
+    <div class="contact-main">
+      <div class="contact-info">
+        <div class="info-block">
+          <h3>Customer Support</h3>
+          <p><strong>Phone:</strong> <a href="tel:+912345678901">+91 23456 78901</a></p>
+          <p><strong>Email:</strong> <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+        </div>
+        <div class="info-block">
+          <h3>Office Address</h3>
+          <address>
+            Transport HQ Pvt Ltd<br>
+            123, Logistics Street<br>
+            Chennai, Tamil Nadu, India<br>
+            PIN 600001
+          </address>
+        </div>
+        <div class="info-block">
+          <h3>Help Center</h3>
+          <p>Visit our <a href="/help">Help / FAQ page</a> for guides, troubleshooting and self-service support.</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="button" 
+            onclick="window.location.href='./error.html'">Submit
+          </button>
+        </form>
+        <div class="form-response" id="formResponse" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="chat-widget-placeholder">
+      <!-- Here you can place your chat widget script or icon -->
+      <button class="chat-btn" 
+        onclick="window.location.href='./error.html'">Chat with us
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Company Info -->
+    <div class="footer-column">
+      <div class="col">
+        <img src="logo.png" alt="Company Logo" class="footer-logo" />
+        <p class="footer-description">Reliable transport solutions across India. Safe, timely, and insured.</p>
+      </div>
+      <p class="footer-contact">
+        <strong>Contact Us:</strong><br />
+        <a href="tel:+912345678901">+91 23456 78901</a><br />
+        <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./error.html">Our Services</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./error.html">Help Center</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="error.html" class="social-icon">
+          <img src="./facebook.png" alt="Facebook" height="35px" />
+        </a>
+        <a href="error.html" class="social-icon">
+          <img src="./twitter.png" alt="Twitter" height="35px"/>
+        </a>
+        <a href="error.html" class="social-icon">
+          <img src="./instagram.png" alt="Instagram" height="35px"/>
+        </a>
+        <a href="error.html" class="social-icon">
+          <img src="./linkedin.png" alt="LinkedIn" height="35px"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legal & Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Transport HQ Pvt Ltd. All rights reserved.</p>
+    <p>
+      <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a>
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
